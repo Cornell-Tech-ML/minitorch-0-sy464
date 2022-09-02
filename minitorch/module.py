@@ -62,9 +62,9 @@ class Module:
             return m
         for child_module_name, child_module in descendents:  # x is a module
             temp = child_module.named_parameters()
-            for y in temp:
-                y[0] = child_module_name + "." + y[0]
-                m.append(y)
+            for name, para in temp:
+                z = child_module_name + "." + name
+                m.append((z, para))
         return m
 
     def parameters(self) -> Sequence[Parameter]:
