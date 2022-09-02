@@ -5,3 +5,6 @@
 * Docs: https://minitorch.github.io/
 
 * Overview: https://minitorch.github.io/module0.html
+
+## Task 0.5
+<img src="task05.jpg" width="50%px">
